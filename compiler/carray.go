@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io"
 
-	"example.com/goflav/symbol"
+	"github.com/richinsley/goflav/symbol"
 )
 
 func (c *CompilerContext) c_array_decl(w io.Writer, sp *symbol.Symbol_t, dims int, dim *[]*symbol.Node_t) {

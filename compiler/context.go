@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"example.com/goflav/symbol"
+	"github.com/richinsley/goflav/symbol"
 )
 
 type CompilerContext struct {

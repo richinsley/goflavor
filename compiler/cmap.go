@@ -1,7 +1,7 @@
 package compiler
 
 import (
-	"example.com/goflav/symbol"
+	"github.com/richinsley/goflav/symbol"
 )
 
 func (c *CompilerContext) Map_decl(sp *symbol.Symbol_t, stmts *symbol.List_t) {

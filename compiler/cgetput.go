@@ -3,7 +3,7 @@ package compiler
 import (
 	"io"
 
-	"example.com/goflav/symbol"
+	"github.com/richinsley/goflav/symbol"
 )
 
 func (c *CompilerContext) c_class_isidof(sp *symbol.Symbol_t) {

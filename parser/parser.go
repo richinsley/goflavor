@@ -62,7 +62,7 @@ import (
 	"os"
 	"unsafe"
 
-	"example.com/goflav/symbol"
+	"github.com/richinsley/goflav/symbol"
 )
 
 func ParseReader(reader io.Reader, filename string) *symbol.List_t {

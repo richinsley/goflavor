@@ -3,7 +3,7 @@ package compiler
 import (
 	"path/filepath"
 
-	"example.com/goflav/symbol"
+	"github.com/richinsley/goflav/symbol"
 )
 
 func basename(path string) string {

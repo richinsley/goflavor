@@ -9,9 +9,9 @@ import (
 	"path"
 	"path/filepath"
 
-	compiler "example.com/goflav/compiler"
-	pp "example.com/goflav/parser"
-	preproc "example.com/goflav/preprocess"
+	compiler "github.com/richinsley/goflav/compiler"
+	pp "github.com/richinsley/goflav/parser"
+	preproc "github.com/richinsley/goflav/preprocess"
 )
 
 func compile_cpp(sourcefile string, targetpath string) {

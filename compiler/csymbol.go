@@ -1,7 +1,7 @@
 package compiler
 
 import (
-	"example.com/goflav/symbol"
+	"github.com/richinsley/goflav/symbol"
 )
 
 // generate a modifiers string from symbol modifiers (note: uses static memory)

@@ -4,7 +4,7 @@ import (
 	"io"
 	"strings"
 
-	"example.com/goflav/symbol"
+	"github.com/richinsley/goflav/symbol"
 )
 
 func (c *CompilerContext) c_expression(w io.Writer, exp *symbol.Node_t, bool_needed bool) {

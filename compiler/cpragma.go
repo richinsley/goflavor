@@ -1,7 +1,7 @@
 package compiler
 
 import (
-	"example.com/goflav/symbol"
+	"github.com/richinsley/goflav/symbol"
 )
 
 // process pragma statements

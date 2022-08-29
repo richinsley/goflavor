@@ -3,7 +3,7 @@ package compiler
 import (
 	"io"
 
-	"example.com/goflav/symbol"
+	"github.com/richinsley/goflav/symbol"
 )
 
 func (c *CompilerContext) Verbatim(w io.Writer, vp *symbol.Verbatim_t) {

@@ -1,3 +1,3 @@
-module example.com/goflavor
+module github.com/richinsley/goflavor
 
 go 1.18

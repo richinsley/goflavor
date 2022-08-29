@@ -3,7 +3,7 @@ package compiler
 import (
 	"fmt"
 
-	"example.com/goflav/symbol"
+	"github.com/richinsley/goflav/symbol"
 )
 
 // determine if a class is a pure abstract class

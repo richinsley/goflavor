@@ -1,7 +1,7 @@
 package compiler
 
 import (
-	"example.com/goflav/symbol"
+	"github.com/richinsley/goflav/symbol"
 )
 
 // 'sp' (used by c_variable_decl_get_class_boot); cnt is the number of comparisons already produced.
