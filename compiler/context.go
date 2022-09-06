@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"path"
 	"strings"
 
 	"github.com/richinsley/goflavor/symbol"
@@ -146,9 +147,11 @@ func (c *CompilerContext) Compile() {
 				c.Map_decl(p.Sp, p.Sub1)
 			}
 		case symbol.INCLUDE:
-			c.c_out(c.OutputFiles["header"], "#include \"%s.hpp\"\n", p.E1.Left.GetString())
+			fp := path.Base(p.E1.Left.GetString() + ".hpp")
+			c.c_out(c.OutputFiles["header"], "#include \"%s\"\n", fp)
 		case symbol.PUSHINCLUDE:
-			c.c_out(c.OutputFiles["header"], "#include \"%s.hpp\"\n", p.E1.Left.GetString())
+			fp := path.Base(p.E1.Left.GetString() + ".hpp")
+			c.c_out(c.OutputFiles["header"], "#include \"%s\"\n", fp)
 		case symbol.POPINCLUDE:
 		case symbol.IMPORT:
 			c.c_outi(c.OutputFiles["header"], "// import \"%s\"\n", p.E1.Left.GetString())
