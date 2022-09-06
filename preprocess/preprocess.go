@@ -59,7 +59,14 @@ func GetAbsPath(infile string, previous string, includepaths *[]string) (string,
 		}
 	}
 
-	// none of the above
+	// none of the above, try merge with cwd
+	pwd, _ := os.Getwd()
+	npath := filepath.Clean(pwd + string(os.PathSeparator) + infile)
+	if _, err := os.Stat(npath); err == nil {
+		return npath, nil
+	}
+
+	// not a file
 	return "", os.ErrNotExist
 }
 
