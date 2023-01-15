@@ -3,6 +3,7 @@ package parser
 /*
 
 #include "cdef_north.h"
+#include <stdint.h>
 
 // jl - count of current c_outi calls
 int current_c_outi_count;
